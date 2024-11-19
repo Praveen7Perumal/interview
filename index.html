@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>INTERVIEW</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+	<div class="body">
+		<div class="p1">
+			<h1>My Will</h1>
+		</div>
+		<div class="p2">
+			<div class="j1">
+				<h1>Good morning, Vinoth!</h1>
+				<h2>Today is November 19, 2024</h2>
+			</div>
+			<div class="j2">
+				<input type="text"  name="">
+				<button><i class="fa-solid fa-bell"><sub>3</sub> </i></button>	
+				<button><i class="fa-solid fa-gear"></i></button>
+				<button><i class="fas fa-sign-in-alt"></i></button>
+			</div>
+		</div>
+
+		<div class="p3">
+			<div class="j3">
+				<div class="j4">
+					<div class="j5"></div>
+					<div class="j6">
+						<h1>Ethan Will</h1>
+						<p>Date of Creation: 04/12/1988</p>
+						<p>Status: Complete</p>
+						<h1>₹ 2.5 Lakhs</h1>
+						<p>Worth assets today</p>
+					</div>
+				</div>
+				<div class="j7">
+					<div class="j8">
+						<h1>10</h1>
+						<p>Active Assets</p>
+					</div>
+					<div class="j9">
+						<h1>3</h1>
+						<p>Active Liabilities</p>
+					</div>
+					<div class="j10">
+						<h1>15</h1>
+						<p> Active Beneficiaries</p>
+					</div>
+					<div class="j11">
+						<h1>3</h1>
+						<p>Active Signatories</p>
+					</div>
+				</div>
+				<div class="j12">
+				<a href="file:///C:/Users/ELCOT/Desktop/interview/index.html#praveen"><button>Add New Asset</button><br></a>	
+					<button>Update Asset Value</button>
+				</div>
+
+			</div>
+			<div class="j13">
+				<div class="j14">
+					<h1>Signatory Will</h1>
+				</div>
+				<div class="j15">
+					<div class="j16">
+						<img src="person2.png" height="50px" width="50px">
+						<h1>liam</h1>
+						<p>Witness<br>Date: 28.04.2013
+						Status: Complete</p>
+					</div>
+					<div class="j17">
+						<img src="person2.png" height="50px" width="50px">
+						<h1>liam</h1>
+						<p>Witness<br>Date: 28.04.2013
+						Status: Complete</p>
+					</div>
+					<div class="j18">
+						<img src="person2.png" height="50px" width="50px">
+						<h1>liam</h1>
+						<p>Witness<br>Date: 28.04.2013
+						Status: Complete</p>
+					</div>
+				</div>
+				<div class="j19">
+					<button onclick="Invitations()">View Invitations</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<section id="praveen">
+
+	<div class="body2">
+		<div class="t1">
+			<img style="height: 150px; width: 150px; border-radius: 50%;margin: 30px; " src="person1.png">
+			<h3 style="color: white;">D.O.C: 28.04.2023</h3>
+			<h3 style="color: white;">Status: Complete</h3>
+			<a style="color: white;" href="">Back Home</a>
+		</div>
+		<div class="t2">
+			<div class="top">
+				<button>ADD Beneficiaries</button>
+				<button>ADD Asset</button>
+				<button>ADD Liability</button>
+				<button>CREATE Links</button>
+				<button>ADD Signatures</button>
+				<button>Will Generation</button>
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>S. No</th>
+						<th>Name</th>
+						<th>Relationship</th>
+						<th>Date of Birth</th>
+						<th>Status</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody id="beneficiaryTable">
+                    <tr>
+                        <td>1</td>
+                        <td>Vaishnavi</td>
+                        <td>Sister</td>
+                        <td>1988-10-04</td>
+                        <td class="status-active">
+                            Active
+                        </td>
+                        <td><button onclick="editBeneficiary(0)">Edit</button> <button onclick="deleteBeneficiary(0)">Delete</button></td>
+                    </tr>
+                
+                    <tr>
+                        <td>2</td>
+                        <td>Vaishnavi</td>
+                        <td>Sister</td>
+                        <td>1988-10-04</td>
+                        <td class="status-inactive">
+                            Inactive
+                        </td>
+                        <td><button onclick="editBeneficiary(1)">Edit</button> <button onclick="deleteBeneficiary(1)">Delete</button></td>
+                    </tr>
+               
+			</table>
+			<div class="form-container">
+				<h3>Add New Beneficiary</h3>
+				<div class="form-group">
+					<label for="title">S.No</label>
+					<input type="text" id="title">
+				</div>
+				<div class="form-group">
+					<label for="firstName">First Name</label>
+					<input type="text" id="firstName">
+				</div>
+				<div class="form-group">
+					<label for="Relationship">Relatioship</label>
+					<input type="text" id="relationship">
+				</div>
+				<div class="form-group">
+					<label for="dateOfBirth">Date of Birth</label>
+					<input type="date" id="dateOfBirth">
+				</div>
+				<div class="form-group">
+					<button onclick="addBeneficiary()">Add Beneficiary</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</section>
+
+<script>
+	
+        const beneficiaries = [
+            { name: 'Vaishnavi', relationship: 'Sister', dob: '1988-10-04', status: 'Active' },
+            { name: 'Vaishnavi', relationship: 'Sister', dob: '1988-10-04', status: 'Inactive' }
+        ];
+
+        function renderBeneficiaries() {
+            const table = document.getElementById("beneficiaryTable");
+            table.innerHTML = "";
+            beneficiaries.forEach((beneficiary, index) => {
+                table.innerHTML += `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>${beneficiary.name}</td>
+                        <td>${beneficiary.relationship}</td>
+                        <td>${beneficiary.dob}</td>
+                        <td class="${beneficiary.status === 'Active' ? 'status-active' : 'status-inactive'}">
+                            ${beneficiary.status}
+                        </td>
+                        <td><button onclick="editBeneficiary(${index})">Edit</button> <button onclick="deleteBeneficiary(${index})">Delete</button></td>
+                    </tr>
+                `;
+            });
+        }
+
+        function addBeneficiary() {
+            const name = document.getElementById("firstName").value;
+            const relationship = document.getElementById("relationship").value;
+            const dob = document.getElementById("dateOfBirth").value;
+            beneficiaries.push({ name, relationship, dob, status: 'Active' });
+            renderBeneficiaries();
+        }
+
+
+        function editBeneficiary(index) {
+        
+            alert("Edit functionality to be implemented");
+        }
+
+        function deleteBeneficiary(index) {
+            beneficiaries.splice(index, 1);
+            renderBeneficiaries();
+        }
+
+        renderBeneficiaries();
+    
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+       
+
